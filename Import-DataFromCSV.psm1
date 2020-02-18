@@ -2,9 +2,9 @@
 
 <#
 
-cd $env:UserProfile\OneDrive\Desktop\code\VTAPI\
+cd $env:UserProfile\OneDrive\Desktop\code\Import-DataFromCSV\
 Import-Module .\Import-DataFromCSV.psm1
-Import-DataFromCSV 
+Import-DataFromCSV $env:UserProfile\OneDrive\Desktop\code\Bulk-VTLookup\valid.csv
 
 #>
 
@@ -40,7 +40,7 @@ function Import-DataFromCSV {
     # Import the CSV.
     try{ 
         $CSV = Import-Csv $FilePath
-        Write-Host "Import from $($FilePath) seems to have succeeded."
+        Write-Host "Import seems to have succeeded."
     }
     catch{
         Write-Error -Exception $E -Message "Import from $FilePath failed. "
@@ -48,5 +48,13 @@ function Import-DataFromCSV {
     }
 
     # Validate the CSV.
+
+    # Print 5 rows from the CSV
+
+    Write-Verbose "Preview of imported contents:"
+    for ($i=0; $i -le 3; $i++){
+        Write-Verbose "$($CSV[$i])"
+    }
+    # Print 5 rows from column 1
 
 }
