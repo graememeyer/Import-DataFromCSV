@@ -8,16 +8,15 @@ Import-DataFromCSV $env:UserProfile\OneDrive\Desktop\code\Bulk-VTLookup\valid.cs
 
 #>
 
-
 <#
 .SYNOPSIS
     Imports data from the specified CSV file. 
 .DESCRIPTION
     Powershell Module to import specified data from a target CSV file.
 .NOTES
-    File Name : ImportDataFromCSV.ps1
+    File Name : Import-DataFromCSV.ps1
     Author    : Graeme Meyer (@graememeyer)
-    Version   : 0.1
+    Version   : 0.2
 .LINK
     https://github.com/graememeyer/
 #>
@@ -56,5 +55,4 @@ function Import-DataFromCSV {
         Write-Verbose "$($CSV[$i])"
     }
     # Print 5 rows from column 1
-
 }
