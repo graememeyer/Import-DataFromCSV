@@ -55,4 +55,14 @@ function Import-DataFromCSV {
         Write-Verbose "$($CSV[$i])"
     }
     # Print 5 rows from column 1
+    $ColumnNumber = 2
+    $Columns = $CSV[0].psobject.properties.name
+
+    Write-Verbose "Preview of column $($ColumnNumber) contents:"
+    for ($i=0; $i -le 3; $i++){
+        Write-Host "$($CSV[$i].$($Columns[$ColumnNumber -1]))"
+    }
 }
+
+Clear-Host
+
