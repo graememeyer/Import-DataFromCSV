@@ -77,9 +77,6 @@ function Import-DataFromCSV {
 
 }
 
-function Validate-SHA256
-{}
-
 
 Clear-Host
 
