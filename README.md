@@ -12,12 +12,12 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-You shouldn't need any prerequisites for this, other than a functional PowerShell install. I've only tested on Windows 10 with the built-in PowerShell 5.1, but I think it should work on most prior versions and possibly on PowerShell core as well. Let me know if you come across any version incompatiblities.
+You shouldn't need any prerequisites for this, other than a functional PowerShell install. I've only tested on Windows 10 with the built-in PowerShell 5.1, but I think it should work on most prior versions and possibly on PowerShell Core as well. Let me know if you come across any version incompatiblities.
 
 ## Roadmap
 
 Version 1.0:
-* Basic functionality, importing from a specified column without any fancy validation or error correction.
+* Basic functionality - importing from a specified column without any fancy validation or error correction or file format compensation.
 
 Upcoming features:
 * Automatic header detection and compensation if no header found
