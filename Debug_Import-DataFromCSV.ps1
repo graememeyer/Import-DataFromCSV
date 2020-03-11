@@ -5,8 +5,9 @@ $Leaf = Split-Path "$($PSScriptRoot)" -Leaf
 Import-Module $PSScriptRoot\$Leaf.psm1
 
 $obj = Import-DataFromCSV ..\Bulk-VTLookup\valid.csv -ColumnIndex 2
-Write-Host "Derp"
+Write-Host "Before object print..."
 Write-Output $obj
+Write-Host "After object print..."
 
 
 # $Location = $PSScriptRoot

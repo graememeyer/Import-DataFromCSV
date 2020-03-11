@@ -16,9 +16,9 @@ Import-DataFromCSV $env:UserProfile\OneDrive\Desktop\code\Bulk-VTLookup\valid.cs
 .NOTES
     File Name : Import-DataFromCSV.ps1
     Author    : Graeme Meyer (@graememeyer)
-    Version   : 0.2
+    Version   : 0.5
 .LINK
-    https://github.com/graememeyer/
+    https://github.com/graememeyer/Import-DataFromCSV
 #>
 
 function Import-DataFromCSV {
